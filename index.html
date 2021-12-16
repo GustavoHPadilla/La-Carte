@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="Logo/logo-2.png">
+
+    <title>Lá Carté.</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+   
+        <!-- começo - heitor -->
+
+        <header>
+            <h1>LÁ CARTÉ.</h1>
+            <nav>
+                <ul>
+                    <li><a href="#"> <i class="fa fa-home" aria-hidden="true"></i> Home </a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#promoções">Promoções</a></li>
+                    <li><a href="#quemsomos">Quem somos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#" class="btn-entrar" onclick="entrar()">Entrar</a></li>
+                </ul>
+           </nav>
+        </header>
+
+
+
+
+        <!-- fim - heitor -->
+
+
+
+<div id="modal">
+
+    
+    <h1 class="h1-modal">Realize o login</h1>
+
+        <hr>
+        
+            <div class="imagens">
+
+                <a href="#"><img src="Fonte/logo-do-facebook.png" alt="Facebook" width="40px" class="img-modal-1" style="background-color: rgb(172, 172, 172);"/></a>
+
+                <a href="#"><img src="Fonte/simbolo-de-mais-do-google.png" alt="Google" width="40px" class="img-modal-1" style="background-color: rgb(172, 172, 172);"/></a>
+
+            </div>
+
+        <hr class="hr-1">
+        <p class="txt-2">OU</p>
+        <hr class="hr-3">
+
+    <form action="#" method="post" class="form-modal">
+
+        <label for="name" class="email-form-modal-l">Username
+            <input type="text" name="name" class="email-form-modal-i" placeholder="Digite aqui...">
+        </label>
+
+        <label for="email" class="email-form-modal-l">E-mail
+            <input type="email" name="email" class="email-form-modal-i" placeholder="Digite aqui...">
+        </label>
+
+        <label for="senha" class="email-form-modal-l">Senha
+            <input type="password" name="senha" class="email-form-modal-i" id="mostraSenha" placeholder="Digite aqui..."> <img src="Fonte/olho-com-um-simbolo-de-interface-de-linha-diagonal-para-invisibilidade.png" alt="Senha" 
+            width="20px" style="cursor: pointer; background-color: transparent; position: absolute; left: 370px; top: 218px;" onclick="verSenha()"/>
+        </label>
+
+        <br>
+
+        <label for="box" id="box-l">EU LI E ACEITO OS TERMOS DE USO.
+            <input type="checkbox" name="box" class="box-i">
+        </label>
+
+        <button class="reset-btn" type="reset">&#10227;</button>
+
+    </form>
+
+
+        <div class="fechar-btn" onclick="fechar()">╳</div>
+        
+        <div class="enviar-btn" onclick="enviar()">Enviar</div>
+
+        
+    </div>
+
+
+
+        <!-- começo - Gustavo -->
+
+    <div class="mascara-logotipo">
+
+        <p class="txt-masc">Logo Lá Carté.</p> 
+
+        <img src="Logo/logo-2.png" alt="logo" class="logo-img">
+
+    </div>
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 2</div>
+                <img src="Fonte/Culinária-italiana-no-Brasil-scaled.jpg" width="100%" height="680px">
+                <div class="text-slide" style="color: white">Lá Carté Restaurant</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext" style="color: black">2 / 2</div>
+                <img src="Fonte/thinkstockphotos-516951374.jpg" width="100%" height="680px">
+                <div class="text-slide" style="color: white">Lá Carté Restaurant</div>
+            </div>
+
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        
+        </div>
+        <br>
+
+        
+
+
+        <!-- fim - Gustavo -->
+
+
+
+        <!-- comeco - matheus -->
+
+    <div class="totalMatheus" data-anime="bottom">
+
+        <p id="pre">
+            Somos a Lá Carté, estamos entre as melhores franquias de restaurante do mundo, atendendo clientes desde 1945.
+
+            Por todo lugar, somos reconhecidos e reverenciados, dominamos na culinária Italiana, nosso objetivo é alcançar o topo, fazendo o melhor e agradando a todos que vem até nós.
+        </p>
+
+        <div id="cardapio">
+
+            <div id="comida">
+
+                <h1 class="banquete-titulo">Banquete</h1>
+
+
+                <a href="#prato"><button>Conferir</button></a>
+
+            </div>
+            
+            <div id="bebidas">
+
+                <h1 class="bebidas-titulo">Bebidas</h1>
+
+                <a href="#garrafa"><button>Conferir</button></a>
+
+            </div>
+
+        </div>
+
+        <div id="prato">
+            <div class="box1">
+                <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <h2>Pizza</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                <h1>$12.00 - <del>$17.99</del></h1> 
+                <a href="#"><button>COMPRAR</button></a> 
+            </div>
+
+            <div class="box1">
+                <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <h2>Pizza</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                <h1>$12.00 - <del>$17.99</del></h1> 
+                <a href="#"><button>COMPRAR</button></a> 
+            </div>
+
+            <div class="box1">
+                <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <h2>Pizza</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+                <h1>$12.00 - <del>$17.99</del></h1> 
+                <a href="#"><button>COMPRAR</button></a> 
+            </div>
+
+            <div class="box1">
+                <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <h2>Pizza</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+                <h1>$12.00 - <del>$17.99</del></h1> 
+                <a href="#"><button>COMPRAR</button></a> 
+            </div>
+
+            <div class="box1">
+                <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <h2>Pizza</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                <h1>$12.00 - <del>$17.99</del></h1> 
+                <a href="#"><button>COMPRAR</button></a> 
+            </div>
+
+            <div class="box1">
+                <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <h2>Pizza</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                <h1>$12.00 - <del>$17.99</del></h1> 
+                <a href="#"><button>COMPRAR</button></a> 
+            </div>
+
+            <div class="box1">
+                <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <h2>Pizza</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+                <h1>$12.00 - <del>$17.99</del></h1> 
+                <a href="#"><button>COMPRAR</button></a> 
+            </div>
+
+            <div class="box1">
+                <img src="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                <h2>Pizza</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> 
+                <h1>$12.00 - <del>$17.99</del></h1> 
+                <a href="#"><button>COMPRAR</button></a> 
+            </div>
+        </div>
+
+    </div>
+
+        <!-- fim - matheus -->
+
+
+        <button id="back-to-top"><img src="Fonte/seta-para-cima.png" alt="Voltar ao topo" width="50px"></button>
+
+
+    <footer>
+
+        <div id="contato">
+
+            <h1 class="h1-contato">Fale Conosco</h1>
+
+
+            <!-- ATENÇÃO -- É ASSIM MESMO, NÃO MEXA!!! -->
+
+
+            <pre class="pre-contato">
+            <span class="span-contato">
+           Endereço</span>            Rua Emiliano Perneta, 297 Sala 71
+                                             Centro - Lins - SP
+                                             CEP 16400-040
+
+            <hr class="hr-contato">
+
+            <span class="span-contato">E-Mail</span>                   <span class="span-sublinhado">atendimento@lacarte.com.br</span>
+                
+            <hr class="hr-contato">
+
+            <span class="span-contato">Telefone</span>              <span class="span-sublinhado">+55 (14) 9 9600-0000</span>
+
+            </pre>
+        </div>
+
+        <h5>© Lá Carté Restaurunte. Todos os direitos reservados 2021.</h5>
+
+    </footer>
+
+
+    </div>
+
+</body>
+
+    <script src="script.js"></script>
+
+</html>

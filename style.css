@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Poppins";
+    background-color: rgb(211, 10, 10);
+    height: 150%;
+    scroll-behavior: smooth;
+}
+
+#pre {
+    font-family: "Poppins";
+    color: white;
+    font-size: 1rem;
+    margin: 100px auto;
+    width: 800px;
+}
+
+.totalMatheus {
+    width: 100%;
+    position: relative;
+    top: 200px;
+}
+
+#cardapio{
+    width: 80%;
+    height: 600px;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+}
+
+#cardapio h1{
+    color: white;
+    padding-top: 110px;
+}
+
+#cardapio p{
+    padding-top: 110px;
+}
+
+#comida{
+    width: 50%;
+    height: 600px;
+    background-image: url('Fonte/Culinária-italiana-no-Brasil-scaled.jpg');
+    border-radius: 30px 0 0 30px;
+    border-right: solid rgba(0, 0, 0, 0.300) 2px;
+    text-align: center;
+}
+
+#comida button{
+    background-color: red;
+    color: rgb(255, 255, 255);
+    width: 200px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: "Poppins";
+    margin-top: 375px;
+    cursor: pointer;
+    transition: .6s ease;
+}
+
+#comida button:hover {
+    background-color: white;
+    color: red;
+}
+
+.banquete-titulo {
+    position: relative;
+    bottom: 100px;
+}
+
+.bebidas-titulo {
+    position: relative;
+    bottom: 100px;
+}
+
+
+#bebidas{
+    width: 50%;
+    height: 600px;
+    background-image: url(https://images.pexels.com/photos/1796698/pexels-photo-1796698.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 30px 30px 0;
+    border-left: solid rgba(0, 0, 0, 0.300) 2px;
+    text-align: center;
+}
+
+#bebidas button{
+    background-color: red;
+    color: white;
+    width: 200px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: "Poppins";
+    margin-top: 375px;
+    cursor: pointer;
+    transition: .6s ease;
+}
+
+#bebidas button:hover {
+  background-color: white;
+  color: rgb(255, 0, 0);
+}
+
+/*Header*/
+
+header{
+    font-family: "Poppins";
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.438);
+}
+
+header h1{
+  color: rgb(255, 0, 0);
+    padding-left: 30px ;
+}
+
+header nav{
+  padding-right: 30px ;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    transition: .2s ease;
+    color: red;
+    padding-bottom: 5px;
+    border-bottom: 2px solid red;
+}
+
+
+/* Carrosel */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    top: 150px;
+    left: 30%;
+    border-top: 15px solid white;
+    transform: translateX(-50%);
+    border-radius: 10px 10px 0 0;
+}
+  
+  .mySlides {
+    transition: 1s ease;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transition: 1s ease;
+  }
+
+  .prev {
+    left: 0px;
+  }
+
+  .next {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: .4s ease;
+  }
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    transition: 3s ease;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    transition: .5s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+    transition: .4s ease;
+  }
+
+  .fade {
+    animation: fade ease 1s;
+    transition: 1s ease;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .7;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fade {
+    from {opacity: .7}
+    to {opacity: 1}
+  }
+
+  #back-to-top {
+    position: fixed;
+    bottom: 16px;
+    right: 20px;
+    border: none;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: .7s ease;
+    z-index: 999;
+}
+
+#back-to-top:hover {
+    border-radius: 50%;
+}
+
+#prato{
+  width: 100%;
+  height: 1000px;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 1000px;
+  padding: 0;
+}
+
+.box1{
+  width: 24%;
+  height: 500px;
+  background-color: white;
+  color: black;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+}
+
+.box1 img{
+  width: 100%;
+  height: 300px
+}
+
+.box1 p{
+  width: 300px;
+  color: black;
+  margin: 0;
+  
+}
+
+.box1 h1{
+  color: red;
+  text-align: center;
+}
+
+.box1 button{
+  padding: 10px 20px;
+  margin-left: 5px;
+  background-color: rgb(255, 196, 0);
+  border: none;
+  border-radius: 5px;
+}
+
+
+/* animação */
+
+[data-anime] {
+    opacity: 0;
+    transition: 1.4s;
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, -100px, 0);
+}
+
+[data-anime="right"] {
+    transform: translate3d(100px, 0, 0);
+    border-bottom: 50px solid rgb(141, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+
+header {
+  z-index: 9999;
+}
+
+
+/* modal */
+
+#modal {
+  width: 500px;
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 999;
+  top: 220px;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 1;
+  border-radius: 30px;
+  display: none;
+  animation: modalFade .6s ease;
+  box-shadow: 0 5px 6px black;
+}
+
+@keyframes modalFade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.fechar-btn {
+  cursor: pointer;  
+  position: relative;
+  top: 155px;
+  left: 25px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  transition: .4s ease;  
+  color: white;
+  padding: 9px 20px 24px 15px;
+  background-color: rgb(75, 75, 75);
+}
+
+.fechar-btn:hover {
+  border-radius: 20%;
+  background-color: rgb(172, 172, 172);
+  color: black;
+}
+
+.reset-btn {
+  cursor: pointer;  
+  position: absolute;
+  top: 316px;
+  left: 75px;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  transition: .4s ease;  
+  color: white;
+  padding: 10px 31px 34px 13px;
+  background-color: rgb(75, 75, 75);
+  border: none;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.reset-btn:hover {
+  border-radius: 20%;
+  background-color: rgb(172, 172, 172);
+  color: black;
+}
+
+.enviar-btn {
+  cursor: pointer;  
+  position: relative;
+  top: 108px;
+  left: 345px;
+  font-weight: bold;
+  width: 90px;
+  height: 35px;
+  transition: .4s ease;  
+  color: white;
+  background-color: rgb(75, 75, 75);
+  border-radius: 30px;
+  padding: 10px 0 0 40px;
+}
+
+.enviar-btn:hover {
+  border-radius: 10px;
+  background-color: rgb(172, 172, 172);
+  color: black;
+}
+
+
+
+
+/* Area de login */
+
+label {
+  font: bold 1rem "Poppins";
+  color: rgb(75, 75, 75);
+  display: flex;
+  flex-direction: column;
+}
+
+input::placeholder {
+  font: normal 1rem "Poppins";
+  color: white
+}
+
+.email-form-modal-i {
+  width: 300px;
+  height: 40px;
+  padding: 1px 0 0 10px;
+  border-radius: 12px;
+  border: none;
+  font: normal 1rem "Poppins";
+  color: rgb(255, 255, 255);
+  background-color: rgb(75, 75, 75);;  
+}
+
+#box-l {
+  display: inline-block;
+  font: normal .7rem "Poppins";
+  position: relative;
+  bottom: 20px;
+}
+
+.box-i {
+  margin: 0 0 0 100px;
+}
+
+.email-form-modal-l {
+  margin: 10px 0 10px 0;
+}
+
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 140px;
+}
+
+.h1-modal {
+  color: rgb(75, 75, 75);
+  text-align: center;
+  padding: 15px 0;
+}
+
+.img-modal-1 {
+  width: 40px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  transition: .4s ease;
+  margin: 0 30px;
+}
+
+.img-modal-1:hover {
+  border-radius: 5px;
+}
+
+.imagens {
+  position: absolute;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%, 46%);
+}
+
+.hr-1 {
+  position: relative;
+  top: 120px;
+  width: 45%;
+  float: right;
+}
+
+.hr-3 {
+  position: relative;
+  top: 120px;
+  width: 45%;
+} 
+
+.txt-2 {
+  color: rgb(75, 75, 75);
+  position: absolute;
+  top: 189px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.logo-img {
+  position: relative;
+  left: 4.55%;
+  top: 105px;
+}
+
+.mascara-logotipo {
+  position: absolute;
+  background-color: rgb(141, 0, 0);
+  width: 550px;
+  height: 700px;
+  left: 1236px;
+  top: 147px;
+  border-radius: 15px 15px 0 0;
+}
+
+.txt-masc {
+  position: relative;
+  font: bold 3rem "Poppins";
+  color: white;
+  left: 20%;
+  top: 50px;
+}
+
+
+/* Footer - Rodapé */
+
+
+footer {
+  background-color: rgb(75, 75, 75);
+  width: 100%;
+  height: 540px;
+  position: relative;
+  top: 300px;
+}
+
+.h1-contato {
+  color: white;
+  position: absolute;
+  left: 109px;
+  top: 70px;
+}
+
+.hr-contato {
+  width: 320px;
+  position: relative;
+  left: 40px;
+}
+
+.pre-contato {
+  font: lighter .8rem "Poppins";
+  color: rgb(168, 168, 168);
+  position: absolute;
+  top: 170px;
+  left: 70px;
+}
+
+.span-contato {
+  font-weight: bold;
+  font-size: .9rem;
+  color: white;
+}
+
+.span-sublinhado {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.span-sublinhado:hover {
+  color: rgb(195, 195, 195);
+}
+
+h5 {
+   color: white;
+   font-weight: lighter;
+   position: absolute;
+   top: 95%;
+   left: 2%;
+}
